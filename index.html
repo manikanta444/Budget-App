@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget of expenses</title>
+    <link rel="stylesheet" href="index.css">
+    
+</head>
+<body>
+    <div class="top">
+        <div class="budget">
+          <div class="budgetTitle">
+            Available Budget in <span class="budgetTitle--month">Month %</span>
+          </div>
+  
+          <div class="budgetValue">+ 2,345.64</div>
+  
+          <div class="budgetIncome clearfix">
+            <div class="budgetIncome--text">Income</div>
+            <div class="right">
+              <div class="budgetIncome--value">+ 4,300.00</div>
+              <div class="budgetIncome--percentage">&nbsp;</div>
+            </div>
+          </div>
+  
+          <div class="budgetExpenses clearfix">
+            <div class="budgetExpenses--text">Expenses</div>
+            <div class="right clearfix">
+              <div class="budgetExpenses--value">- 1,954.36</div>
+              <div class="budgetExpenses--percentage">45%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="bottom">
+        <div class="add">
+          <div class="addContainer">
+            <select class="addType">
+              <option value="inc" selected>+</option>
+              <option value="exp">-</option>
+            </select>
+            <input
+              type="text"
+              class="addDescription"
+              placeholder="Adddescription"
+            />
+            <input type="number" class="addValue" placeholder="Value" />
+            <button class="addBtn" >
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+  
+        <div class="container clearfix">
+          <div class="income">
+            <h2 class="icomeTitle">Income</h2>
+  
+            <div class="incomeList">
+              
+              <div class="item clearfix" id="income-0">
+                  <div class="item__description">Salary</div>
+                  <div class="right clearfix">
+                      <div class="item__value">+ 2,100.00</div>
+                      <div class="item__delete">
+                          <button class="item__delete--btn">
+                              <i class="ion-ios-close-outline"></i>
+                          </button>
+                      </div>
+                  </div>
+              </div>
+  
+              <div class="item clearfix" id="income-1">
+                  <div class="item__description">Sold car</div>
+                  <div class="right clearfix">
+                      <div class="item__value">+ 1,500.00</div>
+                      <div class="item__delete">
+                          <button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button>
+                      </div>
+                  </div>
+              </div>
+             
+            </div>
+          </div>
+  
+          <div class="expenses">
+            <h2 class="expensesTitle">Expenses</h2>
+  
+            <div class="expensesList">
+              <!--
+              <div class="item clearfix" id="expense-0">
+                  <div class="item__description">Apartment rent</div>
+                  <div class="right clearfix">
+                      <div class="item__value">- 900.00</div>
+                      <div class="item__percentage">21%</div>
+                      <div class="item__delete">
+                          <button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button>
+                      </div>
+                  </div>
+              </div>
+              <div class="item clearfix" id="expense-1">
+                  <div class="item__description">Grocery shopping</div>
+                  <div class="right clearfix">
+                      <div class="item__value">- 435.28</div>
+                      <div class="item__percentage">10%</div>
+                      <div class="item__delete">
+                          <button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button>
+                      </div>
+                  </div>
+              </div>
+              -->
+            </div>
+          </div>
+        </div>
+      </div>
+  <script src="index.js"></script>
+</body>
+</html>
